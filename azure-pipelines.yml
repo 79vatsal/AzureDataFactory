@@ -15,6 +15,17 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: AzureResourceGroupDeployment@2
+  inputs:
+    azureSubscription: 'Free Trial(475af040-27af-4db0-9bab-7ba87826c3a4)'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'mizuhoadf'
+    location: 'East US 2'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://github.com/79vatsal/AzureDataFactory/blob/adf_publish/mizuhoadf/ARMTemplateForFactory.json'
+    csmParametersFileLink: 'https://github.com/79vatsal/AzureDataFactory/blob/adf_publish/mizuhoadf/ARMTemplateParametersForFactory.json'
+    deploymentMode: 'Incremental'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
