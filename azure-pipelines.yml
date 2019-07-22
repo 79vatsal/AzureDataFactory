@@ -18,7 +18,7 @@ steps:
     resourceGroupName: 'mizuhoadf'
     location: 'East US 2'
     templateLocation: 'Linked artifact'
-    csmFile: '/ARMTemplateForFactory.json'
+    csmFile: 'mizuhoadf/ARMTemplateForFactory.json'
     deploymentMode: 'Incremental'
 
 
