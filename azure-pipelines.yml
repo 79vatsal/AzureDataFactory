@@ -10,11 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: AzureKeyVault@1
-  inputs:
-    azureSubscription: 'Free Trial (475af040-27af-4db0-9bab-7ba87826c3a4)'
-    KeyVaultName: 'mizuho999'
-    SecretsFilter: '*'
+
 
 
 - script: |
