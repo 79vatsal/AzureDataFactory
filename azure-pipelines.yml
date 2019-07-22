@@ -1,4 +1,5 @@
 # Starter pipeline
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -10,7 +11,15 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-
+- task: AzureResourceGroupDeployment@2
+  inputs:
+    azureSubscription: 'Free Trial (475af040-27af-4db0-9bab-7ba87826c3a4)'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'mizuhoadf'
+    location: 'East US 2'
+    templateLocation: 'Linked artifact'
+    csmFile: 'ARMTemplateForFactory.json'
+    deploymentMode: 'Incremental'
 
 
 - script: |
