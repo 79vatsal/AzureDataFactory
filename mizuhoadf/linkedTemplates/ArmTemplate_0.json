@@ -164,6 +164,12 @@
 						}
 					}
 				],
+				"variables": {
+					"abc": {
+						"type": "String",
+						"defaultValue": "id"
+					}
+				},
 				"annotations": []
 			},
 			"dependsOn": [
