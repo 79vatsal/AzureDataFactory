@@ -49,9 +49,9 @@
 					}
 				],
 				"variables": {
-					"abc": {
+					"id": {
 						"type": "String",
-						"defaultValue": "id"
+						"defaultValue": "0"
 					}
 				},
 				"annotations": []
