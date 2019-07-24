@@ -51,7 +51,7 @@
 				"variables": {
 					"id": {
 						"type": "String",
-						"defaultValue": "1"
+						"defaultValue": "2"
 					}
 				},
 				"annotations": []
