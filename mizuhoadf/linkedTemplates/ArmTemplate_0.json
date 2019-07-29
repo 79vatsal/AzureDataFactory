@@ -168,6 +168,10 @@
 					"id": {
 						"type": "String",
 						"defaultValue": "2"
+					},
+					"startdate": {
+						"type": "String",
+						"defaultValue": "01/01/2019"
 					}
 				},
 				"annotations": []
