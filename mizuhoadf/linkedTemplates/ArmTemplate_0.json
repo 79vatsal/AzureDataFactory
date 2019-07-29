@@ -172,6 +172,10 @@
 					"startdate": {
 						"type": "String",
 						"defaultValue": "01/01/2019"
+					},
+					"enddate": {
+						"type": "String",
+						"defaultValue": "12/31/2019"
 					}
 				},
 				"annotations": []
