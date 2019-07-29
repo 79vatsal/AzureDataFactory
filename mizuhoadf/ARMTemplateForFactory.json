@@ -60,10 +60,6 @@
 					"enddate": {
 						"type": "String",
 						"defaultValue": "12/31/2019"
-					},
-					"Document_Type": {
-						"type": "String",
-						"defaultValue": "Invoice"
 					}
 				},
 				"annotations": []
